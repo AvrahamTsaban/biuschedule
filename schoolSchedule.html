@@ -1,0 +1,268 @@
+<!doctype html>
+<html dir="rtl" lang="he">
+	<head>
+		<meta charset="utf-8">
+		<title>School Schedule</title>
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAQWSURBVFhHzZdLKH1fFMeXizzKu1BEkeSVEgZe5REmUpSJ8ogBAwPyGhADBh4xQMrQxIyBDJRiwASljCQSmVDe5c367bXO3ud3zj3n3n/+v5/8PrXu3vu79zl7nb3XWWdfEKCdRURE4NvbG25tbdn2kz08PODJyYltH9n+/j4+PT2hr6+vbb80WxFbW1tRYdefnZ0texHDwsJsxygqKytt+8m8xI9OZmYmFBYWgpeXFxQUFEgVoKurC/z8/MDDw4PbYmUgPj6e60RfXx9cXV2Bp6cntz8/P8Hb25vrRG1tLaSmpsLr6yusr6/D7u6u7AGgOyLd+Pb2FgIDAzX1m7m/v4fg4GBaIs0BqvwE9OCOkZER2QQYGxtjkayxsVGq2kBnS0pKkr0A/v7+tmMUpaWlukZzKHjus7MzWgHc2dkxBUd9fT3rhFFXlpGRIXvRZZQrysrKTDrNRdDc8Pz8zA0RSKZBZJ2dnZiTk2PRlbW0tLiN8KKiImxra7PoNBdBc+tuDgwMWAZ+l9FcCocQGOOefTfGuXQHfop/14H09HROFGRGrq+vWSsuLpYKQE1NDWsHBwdS0VDXx8bGSsWKSwcSEhJkzUxISAiXKSkpXBLJyclcJiYmculMTEyMrNkgPGQGBwct0VpSUoKRkZEmTaRrLC8vN2lkFRUVKBKSSRNPjnl5eSaNbHR0VM6qLRFj58B3WXh4OD4+PuLQ0NDPOGA0t2/B8vIytLe3y5aGSNGwuroKDofrSynfv7+/60FIdnd3B93d3XKEAXp6wnkFKIUqjLqC9tGok6Wlpcle94hA/n2d1CwO0Afm8PAQ5+bmTLr4guHp6anlFOQ8+dHRET9EXV0digMNijOA7NEICgrSrpXtP44BI/n5+bpOb5KqNzU1yRGI4tSk6bL9Rw6IPZd3MU++t7fH2sLCgq51dHSwRlRVVbl3ICoqyqKRxcXFmdoi4PgetOxGnbaKWFtbM+kKEcyu3wKxdHB+fk6jpaJB7ePjYxB7KxXQD6NTU1NcKj4+PrjMzc3lNB0aGsrt2dlZLsXJ+u9+jF5eXmRNQ52MRUBzmu7t7eU2fU8I+iy7dEAsG0RHR1vOCdSmI/n8/LxUfiMiW9Y0qqurQfyxgc3NTVhZWYGenh7WxdZyScd0fUP6+/tN+/QVE0mG70Gvml2/sykWFxfRQRmKUPvzfxgeHuYyICAAmpubue6K6elpWQOYmZkB2NjYkP6YM95XzQi9anZjxORyBOLFxQVrHllZWbi9vS3qGpOTk3Bzc+M21xM+Pj4wPj6uBxSdE1RdQdFOGu15Q0ODVDWMsYUTExPSr69B7zldr4zSK2U4d6gnN5hWoZWg7RD/EeXQ/0ZEtfPN2CjDUZIRK8n3u7y8xKWlJf6fYB4L+As0wM9BR9DA+QAAAABJRU5ErkJggg==">
+		<style>
+html {
+	text-align: center;
+}
+
+table {
+	width: fit-content;
+
+	&, th, td {
+		border-collapse: collapse;
+		border-style: solid dotted;
+		border: 1px black;
+		margin: 1em auto;
+	}
+
+	th, td {
+		padding: .2em;
+	}
+
+	td {
+		padding: .35em .25em;
+		border: 1px dotted black;
+
+		&:nth-child(6) {
+			text-align: left;
+		}
+	}
+}
+
+.title {
+	background: #91ce55;
+	font-size: 150%;
+}
+
+.day {
+	background: #f1f1f1;
+	color: #772122;
+	font-size: 130%;
+}
+
+.jewish { background: #eecf54; }
+.cs { background: #2de474; }
+.seminar { background: #7bc4ff; }
+.family { background: #ffff81; }
+
+#map {
+	margin: 0 auto;
+}
+		</style>
+	</head>
+	<body>
+		<h1>מערכת שעות</h1>
+		<p id="current-time">
+			<span id="date"></span>, <span id="time"></span>
+		</p>
+		<p>השיעור הנוכחי: <span id="lesson-now"></span></p>
+		<p>השיעור הבא: <span id="lesson-next"></span></p>
+		<table id="schedule">
+			<thead>
+				<tr class="title">
+					<th colspan=6>מערכת שעות</th>
+				</tr>
+			</thead>
+		</table>
+		<script>
+const WEEK_DAYS = ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'];
+
+const INSTRUCTORS = {
+	0: 'הרב שבתי אברהם הכהן רפפורט',
+	1: 'ד"ר אריאל נוף',
+	2: 'הי, זה אני!',
+	3: 'פר\' טלי קאופמן',
+	4: 'ד"ר הדר פרנקל',
+	5: 'ידידיה צוריאל אחי',
+	6: 'אברהם אחי',
+	7: 'משתנה',
+	8: 'חבורת קריפטו',
+};
+
+const LESSON_TYPE = {
+	0: 'הרצאה',
+	1: 'תרגול',
+	2: 'סמינר',
+	3: 'חברותא',
+	4: 'שעת קבלה',
+};
+
+const LESSON_CATEGORY = {
+	0: 'jewish',
+	1: 'cs',
+	2: 'family',
+	3: 'seminar',
+};
+
+const LESSON_NAME = {
+	0: 'אבטחה',
+	1: 'התאוריה שמאחורי הבלוקצ\'יין',
+	2: 'לכידות המשפחה ופירוקה',
+	3: 'מודלים חישוביים',
+	4: 'בדיקת פולינומים במודל קוונטי',
+	5: 'חברותא',
+	6: 'אימות פורמלי',
+	7: 'קבוצת קריאה - קריפטו',
+	8: 'קולקוויום',
+};
+
+const LESSONS = [
+	[ /* Sunday */
+		{ start: 12, end: 13.5, type: 3, name: 7, instructor: 8, building: 0, room: 0, category: 1, courseCode: '', },
+		{ start: 14, end: 15.5, type: 4, name: 3, instructor: 2, building: 0, room: 0, category: 1, courseCode: '89-213-05', },
+		{ start: 16, end: 17.5, type: 2, name: 0, instructor: 1, building: 504, room: 1, category: 3, courseCode: '89-4031-01', },
+		{ start: 18, end: 19.5, type: 0, name: 1, instructor: 1, building: 1002, room: 61, category: 1, courseCode: '89-606-01', },
+	],
+	[ /* Monday */
+	],
+	[ /* Tuesday */
+		{ start: 12, end: 13.5, type: 0, name: 2, instructor: 0, building: 0, room: 0, category: 0, courseCode: '07-1771-01', },
+		{ start: 14, end: 16, type: 1, name: 3, instructor: 2, building: 507, room: 108, category: 1, courseCode: '89-213-05', },
+		{ start: 16, end: 18, type: 3, name: 5, instructor: 5, building: 0, room: 0, category: 2, courseCode: '', },
+	],
+	[ /* Wednesday */
+		{ start: 12, end: 13.5, type: 2, name: 4, instructor: 3, building: 502, room: 7, category: 3, courseCode: '89-4020-01', },
+		{ start: 14, end: 16, type: 3, name: 5, instructor: 6, building: 0, room: 0, category: 2, courseCode: '', },
+	],
+	[ /* Thursday */
+		{ start: 10, end: 11.5, type: 0, name: 6, instructor: 4, building: 604, room: 101, category: 1, courseCode: '89-602-01', },
+		{ start: 12, end: 13.5, type: 0, name: 8, instructor: 7, building: 0, room: 0, category: 3, courseCode: '89-995-01', },
+	],
+	[ /* Friday */
+	],
+];
+
+const uiElements = {
+	schedule: document.querySelector('#schedule'),
+	time: document.querySelector('#time'),
+	date: document.querySelector('#date'),
+	lessonNow: document.querySelector('#lesson-now'),
+	lessonNext: document.querySelector('#lesson-next'),
+};
+
+function hourToString(hour) {
+	const date = new Date();
+	date.setHours(hour);
+	date.setMinutes(hour % 1 * 60);
+
+	const hours = ('0' + date.getHours()).slice(-2);
+	const minutes = ('0' + date.getMinutes()).slice(-2);
+	return hours + ':' + minutes;
+};
+
+function buildLessonRow(lesson) {
+	const tr = document.createElement('tr');
+	const children = [
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+	];
+
+	children[0].textContent = hourToString(lesson.start) + '-' + hourToString(lesson.end);
+	children[1].textContent = LESSON_TYPE[lesson.type];
+	children[2].textContent = LESSON_NAME[lesson.name];
+	children[3].textContent = INSTRUCTORS[lesson.instructor];
+	const building = lesson.building >= 1000 ? lesson.building : ('00' + lesson.building).slice(-3);
+	children[4].textContent = `בנין ${building}, חדר ${('00' + lesson.room).slice(-3)}`;
+	children[5].textContent = lesson.courseCode;
+	tr.className = LESSON_CATEGORY[lesson.category];
+
+	tr.append(...children);
+	return tr;
+};
+
+function buildTable() {
+	for (let day = 0; day < LESSONS.length; day++) {
+		if (LESSONS[day].length === 0) continue;
+		const tbody = document.createElement('tbody');
+		const titleTr = document.createElement('tr');
+		const th = document.createElement('th');
+		th.textContent = 'יום ' + WEEK_DAYS[day];
+		th.colSpan = 6;
+		titleTr.className = 'day';
+		titleTr.append(th);
+		tbody.append(titleTr);
+
+		LESSONS[day].forEach(lesson => tbody.append(buildLessonRow(lesson)));
+
+		uiElements.schedule.append(tbody);
+	}
+};
+
+(function updateTime() {
+	uiElements.time.textContent =
+		new Date().toLocaleString('en-il').split(', ')[1];
+	setTimeout(updateTime, 400);
+})();
+
+(function updateDate() {
+	const dateObj = new Date();
+	const date = dateObj.toLocaleString('en-il').split(', ')[0];
+	const day = dateObj.getDay();
+
+	uiElements.date.textContent = `יום ${WEEK_DAYS[day]}, ${date}`;
+	setTimeout(updateDate, 600_000);
+})();
+
+function findNextLesson(day, hour) {
+	for (let nextDay = day; nextDay < LESSONS.length; nextDay++) {
+		const dayLessons = LESSONS[nextDay];
+		for (const lesson of dayLessons) {
+			if (lesson.start > hour) {
+				return lesson;
+			}
+		}
+
+		hour = 0; /* Start searching from the start of the next day */
+	}
+
+	return null;
+};
+
+const findCurrentLesson = (day, hour, minutes) => LESSONS
+	?.[day]
+	?.filter(lesson => {
+		const now = hour + minutes / 60;
+		return now >= lesson.start && now < lesson.end;
+	})
+	?.[0] ?? null;
+
+function updateLesson() {
+	const dateObj = new Date();
+	const day = dateObj.getDay();
+	const hour = dateObj.getHours();
+	const minutes = dateObj.getMinutes();
+	const currentLesson = findCurrentLesson(day, hour, minutes);
+	const nextLesson = findNextLesson(day, hour);
+
+	uiElements.lessonNow.textContent = currentLesson
+		? LESSON_NAME[currentLesson.name] +
+			', בבנין ' + currentLesson.building +
+			', חדר ' + currentLesson.room
+		: 'אין שום שיעור עכשיו';
+
+	uiElements.lessonNext.textContent = nextLesson
+		? LESSON_NAME[nextLesson.name] +
+			', בשעה ' + hourToString(nextLesson.start) +
+			', בבנין ' + nextLesson.building +
+			', חדר ' + nextLesson.room
+		: 'אין עוד שיעורים השבוע';
+
+	/* Update every minute */
+	setTimeout(updateLesson, 10_000);
+};
+
+buildTable();
+updateLesson();
+		</script>
+		
+		<img id="map" src="https://i.imgur.com/n3kubgo.png">
+	</body>
+</html>
