@@ -44,10 +44,10 @@ table {
 	font-size: 130%;
 }
 
-.torah_lect { background: #eecf54; }
-.torah_hevrutha { background: #ffdd56; }
+.torah { background: #ffdd56; }
 .math { background: #2de474; }
 .comp { background: #7bc4ff; }
+.other_vegetables { background: #dd4a4a; }
 
 #map {
 	margin: 0 auto;
@@ -81,6 +81,30 @@ const INSTRUCTORS = {
 	6: 'ד״ר אור שלום',
 	7: 'ד״ר איתי ליפשיץ',
 	8: 'רגב יחזקאל־אימרה',
+	9: 'שירה ידעי',
+	10: 'פרופ׳ נועה אגמון',
+	11: 'נוי שפרמן',
+	12: 'הרב מאיר ברקוביץ׳',
+	13: 'הרב דוד בגנו',
+	14: 'חברותא'
+};
+
+const LESSON_NAME = {
+	0: 'עיון מסכת סוטה',
+	1: 'סמינר אילנות - המקשתת המדעית',
+	2: 'סדנת תכנות בפייתון',
+	3: 'מתמטיקה בדידה',
+	4: 'אינפי 1',
+	5: 'אינפי 1',
+	6: 'אלגברה לינארית 1',
+	7: 'גמרא בקיאות',
+	8: 'אלגברה לינארית 1',
+	9: 'מתמטיקה בדידה',
+	10: 'מבוא לחישוב',
+	11: 'מבוא לחישוב',
+	12: 'גבורות  שמונים',
+	13: 'הלכה',
+	14: 'חברותא'
 };
 
 const LESSON_TYPE = {
@@ -88,34 +112,21 @@ const LESSON_TYPE = {
 	1: 'תרגול',
 	2: 'סמינר',
 	3: 'חברותא',
-	4: 'שעת קבלה',
+	4: 'שיעור',
 };
 
 const LESSON_CATEGORY = {
-	0: 'jewish',
-	1: 'cs',
-	2: 'family',
-	3: 'seminar',
-};
-
-const LESSON_NAME = {
-	0: 'אבטחה',
-	1: 'התאוריה שמאחורי הבלוקצ\'יין',
-	2: 'לכידות המשפחה ופירוקה',
-	3: 'מודלים חישוביים',
-	4: 'בדיקת פולינומים במודל קוונטי',
-	5: 'חברותא',
-	6: 'אימות פורמלי',
-	7: 'קבוצת קריאה - קריפטו',
-	8: 'קולקוויום',
+	0: 'torah',
+	1: 'math',
+	2: 'comp',
+	3: 'other_vegetables'
 };
 
 const LESSONS = [
 	[ /* Sunday */
-		{ start: 12, end: 13.5, type: 3, name: 7, instructor: 8, building: 0, room: 0, category: 1, courseCode: '', },
-		{ start: 14, end: 15.5, type: 4, name: 3, instructor: 2, building: 0, room: 0, category: 1, courseCode: '89-213-05', },
-		{ start: 16, end: 17.5, type: 2, name: 0, instructor: 1, building: 504, room: 1, category: 3, courseCode: '89-4031-01', },
-		{ start: 18, end: 19.5, type: 0, name: 1, instructor: 1, building: 1002, room: 61, category: 1, courseCode: '89-606-01', },
+		{ start: 8, end: 12, type: 3, name: 0, instructor: 0, building: 411, room: 0, category: 1, courseCode: '071721-01', },
+		{ start: 12, end: 13.5, type: 4, name: 0, instructor: 0, building: 411, room: 0, category: 1, courseCode: '071723-01', },
+		{ start: 16, end: 17.5, type: 2, name: 1, instructor: 1, building: 504, room: 5, category: 3, courseCode: '31990-01', },
 	],
 	[ /* Monday */
 	],
