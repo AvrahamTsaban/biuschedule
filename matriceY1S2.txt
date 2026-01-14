@@ -1,0 +1,272 @@
+
+	<legend></legend>
+		<div id="ContentPlaceHolder1_PeriodScheduleA_PeriodSchedularId" class="GridViewVisibleWithRepeater">
+  <div>
+		<table class="GridView" cellspacing="0" aria-label="מערכת שעות" id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" style="border-collapse:collapse;">
+			<tbody><tr class="GridHeader" align="right">
+				<th scope="col">יום</th><th scope="col">שעה</th><th scope="col">שם קבוצת קורס</th><th scope="col">קוד קבוצת קורס</th><th class="MobileHiddenColumn" scope="col">תקופה</th><th class="MobileHiddenColumn" scope="col">שעות</th><th class="MobileHiddenColumn" scope="col">נ"ז</th><th class="MobileHiddenColumn" scope="col">ש"ש</th><th class="MobileHiddenColumn" scope="col">מרצה</th><th scope="col">חדר</th><th scope="col">עזרים</th><th scope="col">סילבוס</th><th scope="col">סוג מפגש</th>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">&nbsp;</td><td style="white-space:nowrap;">&nbsp;</td><td>חברותא</td><td>071855-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn">&nbsp;</td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_0"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_0">חברותא</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">&nbsp;</td><td style="white-space:nowrap;">&nbsp;</td><td>חברותא</td><td>071845-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn">&nbsp;</td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_1"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_1">חברותא</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">&nbsp;</td><td style="white-space:nowrap;">&nbsp;</td><td>חברותא- בקיאות- הרב ליפשיץ</td><td>071837-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn">&nbsp;</td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_2"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_2">חברותא</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">&nbsp;</td><td style="white-space:nowrap;">&nbsp;</td><td>חברותא- בקיאות- הרב ליפשיץ</td><td>071838-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn" style="white-space:nowrap;">0.5</td><td class="MobileHiddenColumn">&nbsp;</td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_3"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_3">חברותא</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">&nbsp;</td><td style="white-space:nowrap;">&nbsp;</td><td>לומדה בנושא הטרדה מינית</td><td>98005-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">שנתי</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn">&nbsp;</td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_4"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_4">הדרכה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">&nbsp;</td><td style="white-space:nowrap;">&nbsp;</td><td>לומדה בנושא משמעת - אתיקה ושמירה על טוהר הבחינות </td><td>982026-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">שנתי</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn">&nbsp;</td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_5"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_5">הדרכה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">א'</td><td style="white-space:nowrap;">08:00-12:00</td><td>סדר הכנה- הרב דהן</td><td>071722-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn">הרב דהן יהודה </td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_6"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_6">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">א'</td><td style="white-space:nowrap;">12:00-14:00</td><td>עיון בסוגיות ממסכת מכות</td><td>071724-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">הרב דהן יהודה </td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_7"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_7">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">א'</td><td style="white-space:nowrap;">16:00-18:00</td><td>הספקטרום המדעי: כשרוח וחומר נפגשים ב'</td><td>31991-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">פרופ' רייך אריה </td><td>חדר מחלקה - 999</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_8"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_8">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ב'</td><td style="white-space:nowrap;">08:00-10:00</td><td>מבואות הקדשים- שיעורים במסכת מנחות</td><td>071740-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">הרב ברקוביץ מאיר </td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_9"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_9">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ב'</td><td style="white-space:nowrap;">10:00-13:00</td><td>מבוא להסתברות </td><td>88165-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">3</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1.5</td><td class="MobileHiddenColumn">ד"ר פלדהיים נעמי </td><td>מ.ישראל-604 - 62</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_10"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_10">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ב'</td><td style="white-space:nowrap;">13:00-15:00</td><td>חשבון אינפיניטסימלי 2</td><td>88133-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">4</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn">ד"ר בק יונתן </td><td>מ.ישראל-604 - 62</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_11"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_11">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ב'</td><td style="white-space:nowrap;">15:00-18:00</td><td>מבוא לתכנות מונחה עצמים</td><td>88174-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">3</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1.5</td><td class="MobileHiddenColumn">ד"ר קוגן-סדצקי מרינה </td><td>מ.ישראל-502 - 23</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_12"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_12">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ב'</td><td style="white-space:nowrap;">18:00-20:00</td><td>מבוא לתכנות מונחה עצמים</td><td>88174-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">מר כהן איתי </td><td>מ.ישראל-502 - 23</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_13"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_13">תרגיל</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ב'</td><td style="white-space:nowrap;">20:00-22:00</td><td>בקיאות בגמרא</td><td>071763-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">ד"ר ליפשיץ איתי </td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_14"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_14">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ג'</td><td style="white-space:nowrap;">12:00-14:00</td><td>מבוא להסתברות </td><td>88165-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">מר חסון רועי </td><td>מ.ישראל-507 - 108</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_15"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_15">תרגיל</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ג'</td><td style="white-space:nowrap;">16:00-18:00</td><td>אלגברה לינארית 2 </td><td>88113-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">4</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn">פרופ' עדין רון </td><td>מ.ישראל-507 - 105</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_16"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_16">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ד'</td><td style="white-space:nowrap;">08:00-10:00</td><td>סוגיות נבחרות בפרק עגלה ערופה</td><td>071784-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">הרב ברקוביץ מאיר </td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_17"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_17">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ד'</td><td style="white-space:nowrap;">12:00-14:00</td><td>תוכנית הלכה קב' א'</td><td>071790-02</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">הרב בגנו דוד </td><td>&nbsp;</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_18"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_18">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ה'</td><td style="white-space:nowrap;">08:00-10:00</td><td>חשבון אינפיניטסימלי 2</td><td>88133-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">4</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn">ד"ר בק יונתן </td><td>מ.ישראל-507 - 101</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_19"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_19">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ה'</td><td style="white-space:nowrap;">14:00-16:00</td><td>חשבון אינפיניטסימלי 2</td><td>88133-03</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">מר הררי דניאל </td><td>מ.ישראל-507 - 101</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_20"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_20">תרגיל</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ה'</td><td style="white-space:nowrap;">16:00-18:00</td><td>אלגברה לינארית 2 </td><td>88113-01</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">4</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn">פרופ' עדין רון </td><td>משפטים-305 - 10</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_21"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_21">הרצאה</span>
+                 </td>
+			</tr><tr id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule" class="GridRow">
+				<td style="white-space:nowrap;">ה'</td><td style="white-space:nowrap;">18:00-20:00</td><td>אלגברה לינארית 2</td><td>88113-03</td><td class="MobileHiddenColumn" style="white-space:nowrap;">סמסטר ב'</td><td class="MobileHiddenColumn" style="white-space:nowrap;">&nbsp;</td><td class="MobileHiddenColumn" style="white-space:nowrap;">2</td><td class="MobileHiddenColumn" style="white-space:nowrap;">1</td><td class="MobileHiddenColumn">ד"ר אמארה עולא <br>פרופ' עדין רון </td><td>משפטים-305 - 10</td><td>
+                    <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblTeachingAccessories_22"></span>
+                </td><td style="white-space:nowrap;">                    
+                                        
+                    
+                    
+                    
+                </td><td>
+                     <span id="ContentPlaceHolder1_PeriodScheduleA_gvPeriodSchedule_lblStudyLessonType_22">תרגיל</span>
+                 </td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>
+<div id="ContentPlaceHolder1_PeriodScheduleA_RepeaterPeriodSchedularId" class="DivUnVisibleRepeaterCard">
+	
+</div>
+
+
+ 
+
+	
