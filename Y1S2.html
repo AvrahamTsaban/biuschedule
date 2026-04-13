@@ -85,6 +85,7 @@ const INSTRUCTORS = {
 	9: 'פרופ׳ רון עדין',
 	10: 'דניאל הררי',
 	11: 'ד״ר עולא אמארה ופרופ׳ רון עדין',
+	12: 'חברותא',
 };
 
 const LESSON_NAME = {
@@ -99,6 +100,7 @@ const LESSON_NAME = {
 	8: 'אלגברה לינארית 2',
 	9: 'סוגיות נבחרות בפרק עגלה ערופה',
 	10: 'תוכנית הלכה קב׳ א׳',
+	11: 'חברותא',
 };
 
 const LESSON_TYPE = {
@@ -120,30 +122,34 @@ const LESSON_CATEGORY = {
 const LESSONS = [
 	[ /* Sunday */
 		{ start: 8, end: 12, type: 0, name: 0, instructor: 0, building: 411, room: 0, category: 0, courseCode: '071722-02', },
-		{ start: 12, end: 14, type: 0, name: 1, instructor: 0, building: 411, room: 0, category: 0, courseCode: '071724-02', },
-		{ start: 16, end: 18, type: 0, name: 2, instructor: 1, building: 999, room: 0, category: 3, courseCode: '31991-01', },
+		{ start: 12, end: 13.5, type: 0, name: 1, instructor: 0, building: 411, room: 0, category: 0, courseCode: '071724-02', },
+		{ start: 13.75, end: 15.75, type: 3, name: 11, instructor: 12, building: 411, room: 0, category: 0, courseCode: '071724-02', },
+		{ start: 16, end: 17.5, type: 0, name: 2, instructor: 1, building: 999, room: 0, category: 3, courseCode: '31991-01', },
 	],
 	[ /* Monday */
-		{ start: 8, end: 10, type: 0, name: 3, instructor: 2, building: 411, room: 0, category: 0, courseCode: '071740-02', },
-		{ start: 10, end: 13, type: 0, name: 4, instructor: 3, building: 604, room: 62, category: 1, courseCode: '88165-01', },
-		{ start: 13, end: 15, type: 0, name: 5, instructor: 4, building: 604, room: 62, category: 1, courseCode: '88133-01', },
-		{ start: 15, end: 18, type: 0, name: 6, instructor: 5, building: 502, room: 23, category: 2, courseCode: '88174-01', },
-		{ start: 18, end: 20, type: 1, name: 6, instructor: 6, building: 502, room: 23, category: 2, courseCode: '88174-02', },
-		{ start: 20, end: 22, type: 0, name: 7, instructor: 7, building: 411, room: 0, category: 0, courseCode: '071763-02', },
+		{ start: 8, end: 9.5, type: 0, name: 3, instructor: 2, building: 411, room: 0, category: 0, courseCode: '071740-02', },
+		{ start: 10, end: 12.5, type: 0, name: 4, instructor: 3, building: 604, room: 62, category: 1, courseCode: '88165-01', },
+		{ start: 13, end: 14.5, type: 0, name: 5, instructor: 4, building: 604, room: 62, category: 1, courseCode: '88133-01', },
+		{ start: 15, end: 17.5, type: 0, name: 6, instructor: 5, building: 502, room: 23, category: 2, courseCode: '88174-01', },
+		{ start: 18, end: 19.5, type: 1, name: 6, instructor: 6, building: 502, room: 23, category: 2, courseCode: '88174-02', },
+		{ start: 19.5, end: 21, type: 0, name: 7, instructor: 7, building: 411, room: 0, category: 0, courseCode: '071763-02', },
 	],
 	[ /* Tuesday */
-		{ start: 12, end: 14, type: 1, name: 4, instructor: 8, building: 507, room: 108, category: 1, courseCode: '88165-02', },
-		{ start: 16, end: 18, type: 0, name: 8, instructor: 9, building: 507, room: 105, category: 1, courseCode: '88113-01', },
+		{ start: 12, end: 13.5, type: 1, name: 4, instructor: 8, building: 507, room: 108, category: 1, courseCode: '88165-02', },
+		{ start: 13.75, end: 14.75, type: 3, name: 7, instructor: 12, building: 411, room: 0, category: 0, courseCode: '071724-02', },
+		{ start: 16, end: 17.5, type: 0, name: 8, instructor: 9, building: 507, room: 105, category: 1, courseCode: '88113-01', },
 	],
 	[ /* Wednesday */
-		{ start: 8, end: 10, type: 0, name: 9, instructor: 2, building: 411, room: 0, category: 0, courseCode: '071784-02', },
-		{ start: 12, end: 14, type: 0, name: 10, instructor: 2, building: 411, room: 0, category: 0, courseCode: '071790-02', },
+		{ start: 8, end: 9.5, type: 0, name: 9, instructor: 2, building: 411, room: 0, category: 0, courseCode: '071784-02', },
+		{ start: 10, end: 12, type: 3, name: 11, instructor: 12, building: 411, room: 0, category: 0, courseCode: '071724-02', },
+		{ start: 12, end: 13.5, type: 0, name: 10, instructor: 2, building: 411, room: 0, category: 0, courseCode: '071790-02', },
+		{ start: 13.75, end: 14.75, type: 3, name: 11, instructor: 12, building: 411, room: 0, category: 0, courseCode: '071724-02', },
 	],
 	[ /* Thursday */
-		{ start: 8, end: 10, type: 0, name: 5, instructor: 4, building: 507, room: 101, category: 1, courseCode: '88133-01', },
-		{ start: 14, end: 16, type: 1, name: 5, instructor: 10, building: 507, room: 101, category: 1, courseCode: '88133-03', },
-		{ start: 16, end: 18, type: 0, name: 8, instructor: 9, building: 305, room: 10, category: 1, courseCode: '88113-01', },
-		{ start: 18, end: 20, type: 1, name: 8, instructor: 11, building: 305, room: 10, category: 1, courseCode: '88113-03', },
+		{ start: 8, end: 9.5, type: 0, name: 5, instructor: 4, building: 507, room: 101, category: 1, courseCode: '88133-01', },
+		{ start: 14, end: 15.5, type: 1, name: 5, instructor: 10, building: 507, room: 101, category: 1, courseCode: '88133-03', },
+		{ start: 16, end: 17.5, type: 0, name: 8, instructor: 9, building: 305, room: 10, category: 1, courseCode: '88113-01', },
+		{ start: 18, end: 19.5, type: 1, name: 8, instructor: 11, building: 305, room: 10, category: 1, courseCode: '88113-03', },
 	],
 	[ /* Friday */
 	],
