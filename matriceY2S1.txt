@@ -1,0 +1,61 @@
+
+                    
+    
+
+    <br>
+    <fieldset id="ContentPlaceHolder1_gbMatrixA">
+	<legend>סמסטר א'</legend>
+        <div id="ContentPlaceHolder1_matrixA_PeriodScheduleId" class="GridViewVisibleWithRepeater">
+<div>
+		<table class="GridView" cellspacing="0" id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" style="border-collapse:collapse;">
+			<tbody><tr class="GridHeader" align="right">
+				<th scope="col">&nbsp;</th><th scope="col">ראשון</th><th scope="col">שני</th><th scope="col">שלישי</th><th scope="col">רביעי</th><th scope="col">חמישי</th><th scope="col">שישי</th><th scope="col">שבת</th>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">09:00-10:00</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> משוואות דיפרנציאליות רגילות (88240-01) </span><br>09:00-12:00<br>פרופ' שיין מיכאל משה <br>מ.ישראל-507 - 4<br>פרופ' שיין מיכאל משה <br>מ.ישראל-507 - 4</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">10:00-11:00</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> הלכות ריבית (קב' 1) (079619-01) </span><br>10:00-12:00<br>הרב בגנו דוד <br>הרב בגנו דוד </td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> משוואות דיפרנציאליות רגילות (88240-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">11:00-12:00</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לתורת החבורות (88211-01) </span><br>11:00-14:00<br>ד"ר בק יונתן <br>משפטים-305 - 4<br>ד"ר בק יונתן <br>משפטים-305 - 4</td><td class="MatrixStyle"><span class="Boldtext"> הלכות ריבית (קב' 1) (079619-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> משוואות דיפרנציאליות רגילות (88240-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">12:00-13:00</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לתורת החבורות (88211-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">13:00-14:00</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לתורת החבורות (88211-01) </span>המשך</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לקומבינטוריקה (88554-01) </span><br>13:00-16:00<br>פרופ' קלר נתן <br>מ.ישראל-605 - 11<br>פרופ' קלר נתן <br>מ.ישראל-605 - 11</td><td class="MatrixStyle"><span class="Boldtext"> תורת הגרפים (88555-01) </span><br>13:00-16:00<br>פרופ' רויכמן יובל <br>מ.ישראל-604 - 13<br>פרופ' רויכמן יובל <br>מ.ישראל-604 - 13</td><td class="MatrixStyle"><span class="Boldtext"> שיטות נומריות 1 (88376-01) </span><br>13:00-15:00<br>פרופ' לזר עמנואל- מנחם <br>סטודנטים-105 - 1<br>פרופ' לזר עמנואל- מנחם <br>סטודנטים-105 - 1</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">14:00-15:00</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לקומבינטוריקה (88554-01) </span>המשך</td><td class="MatrixStyle"><span class="Boldtext"> תורת הגרפים (88555-01) </span>המשך</td><td class="MatrixStyle"><span class="Boldtext"> שיטות נומריות 1 (88376-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">15:00-16:00</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לתורת החבורות (88211-03) </span><br>15:00-17:00<br>מר מועלם איתי <br>משפטים-305 - 10<br>מר מועלם איתי <br>משפטים-305 - 10</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לקומבינטוריקה (88554-01) </span>המשך</td><td class="MatrixStyle"><span class="Boldtext"> תורת הגרפים (88555-01) </span>המשך</td><td class="MatrixStyle"><span class="Boldtext"> שיטות נומריות 1 (88376-02) </span><br>15:00-17:00<br>גב' כהן טל (מרכז שיעור)<br>פרופ' לזר עמנואל- מנחם <br>סטודנטים-105 - 1<br>גב' כהן טל (מרכז שיעור)<br>פרופ' לזר עמנואל- מנחם <br>סטודנטים-105 - 1</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">16:00-17:00</td><td class="MatrixStyle"><span class="Boldtext"> מבוא לתורת החבורות (88211-03) </span>המשך<br><span class="Boldtext"> תורת המשחקים (88642-01) </span><br>16:00-18:00<br>פרופ' ברזל ברוך <br>מ.ישראל-604 - 61<br>פרופ' ברזל ברוך <br>מ.ישראל-604 - 61</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> גאומטריה אוקלידית ולא אוקלידית (88537-01) </span><br>16:00-19:00<br>ד"ר כהן אפי <br>נלמד בזום - 999<br>ד"ר כהן אפי <br>נלמד בזום - 999</td><td class="MatrixStyle"><span class="Boldtext"> שיטות נומריות 1 (88376-02) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">17:00-18:00</td><td class="MatrixStyle"><span class="Boldtext"> תורת המשחקים (88642-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> גאומטריה אוקלידית ולא אוקלידית (88537-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr id="ContentPlaceHolder1_matrixA_gvMatrixPeriodSchedule" class="GridRow">
+				<td class="MatrixStyle" style="white-space:nowrap;">18:00-19:00</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> גאומטריה אוקלידית ולא אוקלידית (88537-01) </span>המשך</td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle"><span class="Boldtext"> הלכות ריבית (קב' 3) זום (079697-01) </span><br>18:00-20:00<br>הרב בגנו דוד <br>הרב בגנו דוד </td><td class="MatrixStyle">&nbsp;</td><td class="MatrixStyle">&nbsp;</td>
+			</tr><tr>
+				<td colspan="8"><table class="pagination-table">
+					<tbody><tr>
+						<td nowrap="Nowrap" style="width:1%;"></td><td align="center" style="width:1%;"><table>
+							<tbody><tr>
+								<td><span>1</span></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$matrixA$gvMatrixPeriodSchedule','Page$2')">2</a></td>
+							</tr>
+						</tbody></table></td><td nowrap="Nowrap" align="left"></td>
+					</tr>
+				</tbody></table></td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>
+
+<div id="ContentPlaceHolder1_matrixA_RepeaterMatrixPeriodSchedule" class="DivUnVisibleRepeaterCard">    
+		
+	</div>
+    
+</fieldset>
+    <br>
+    
+    <br>
+    
+    
+    <span id="ContentPlaceHolder1_lblNoStudySessionLessons"><br><b>קבוצות קורס נוספות (ללא יום/שעה):</b><br><table><tbody><tr><td>079572-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079573-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079576-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079578-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079579-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079580-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079581-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079582-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079583-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079584-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079586-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079588-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079589-01</td><td>חברותא</td><td>סמסטר א'</td></tr><tr><td>079590-01</td><td>חברותא</td><td>סמסטר א'</td></tr></tbody></table></span>
+        
+
+                

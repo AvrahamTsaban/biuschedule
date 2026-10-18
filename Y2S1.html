@@ -1,0 +1,270 @@
+<!doctype html>
+<html dir="rtl" lang="he">
+	<head>
+		<meta charset="utf-8">
+		<title>School Schedule</title>
+		<link rel="icon" href="./icon.ico" type="image/x-icon">
+		<style>
+html {
+	text-align: center;
+}
+
+table {
+	width: fit-content;
+
+	&, th, td {
+		border-collapse: collapse;
+		border-style: solid dotted;
+		border: 1px black;
+		margin: 1em auto;
+	}
+
+	th, td {
+		padding: .2em;
+	}
+
+	td {
+		padding: .35em .25em;
+		border: 1px dotted black;
+
+		&:nth-child(6) {
+			text-align: left;
+		}
+	}
+}
+
+.title {
+	background: #91ce55;
+	font-size: 150%;
+}
+
+.day {
+	background: #f1f1f1;
+	color: #772122;
+	font-size: 130%;
+}
+
+.torah { background: #ffdd56; }
+.math { background: #2de474; }
+.comp { background: #7bc4ff; }
+.other_vegetables { background: #dd4a4a; }
+
+#map {
+	margin: 0 auto;
+	width: min(95vw, 725px);
+}
+		</style>
+	</head>
+	<body>
+		<h1>מערכת שעות</h1>
+		<p id="current-time">
+			<span id="date"></span>, <span id="time"></span>
+		</p>
+		<p>השיעור הנוכחי: <span id="lesson-now"></span></p>
+		<p>השיעור הבא: <span id="lesson-next"></span></p>
+		<table id="schedule">
+			<thead>
+				<tr class="title">
+					<th colspan=6>מערכת שעות</th>
+				</tr>
+			</thead>
+		</table>
+		<script>
+const WEEK_DAYS = ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'];
+
+const INSTRUCTORS = {
+	0: 'ד״ר יונתן בק',
+	1: 'מר איתי מועלם',
+	2: 'פרופ׳ ברוך ברזל',
+	3: 'הרב דוד בגנו',
+	4: 'פרופ׳ נתן קלר',
+	5: 'פרופ׳ יובל רויכמן',
+	6: 'פרופ׳ עמנואל-מנחם לזר',
+	7: 'גב׳ טל כהן',
+	8: 'ד״ר אפי כהן',
+	9: 'פרופ׳ מיכאל משה שיין'
+};
+
+const LESSON_NAME = {
+	0: 'מבוא לתורת החבורות',
+	1: 'תורת המשחקים',
+	2: 'הלכות ריבית',
+	3: 'מבוא לקומבינטוריקה',
+	4: 'תורת הגרפים',
+	5: 'שיטות נומריות 1',
+	6: 'גאומטריה אוקלידית ולא אוקלידית',
+	7: 'משוואות דיפרנציאליות רגילות'
+};
+
+const LESSON_TYPE = {
+	0: 'הרצאה',
+	1: 'תרגול',
+	2: 'סמינר',
+	3: 'חברותא',
+	4: 'שיעור',
+	5: 'סדנה'
+};
+
+const LESSON_CATEGORY = {
+	0: 'torah',
+	1: 'math',
+	2: 'comp',
+	3: 'other_vegetables'
+};
+
+const LESSONS = [
+	[ /* Sunday */
+		{ start: 11, end: 14, type: 0, name: 0, instructor: 0, building: 305, room: 4, category: 1, courseCode: '88211-01', },
+		{ start: 15, end: 17, type: 1, name: 0, instructor: 1, building: 305, room: 10, category: 1, courseCode: '88211-03', },
+		{ start: 16, end: 18, type: 0, name: 1, instructor: 2, building: 604, room: 61, category: 1, courseCode: '88642-01', },
+	],
+	[ /* Monday */
+		{ start: 10, end: 12, type: 4, name: 2, instructor: 3, building: 411, room: 0, category: 0, courseCode: '079619-01', },
+		{ start: 13, end: 16, type: 0, name: 3, instructor: 4, building: 605, room: 11, category: 1, courseCode: '88554-01', },
+		{ start: 18, end: 20, type: 4, name: 2, instructor: 3, building: 999, room: 999, category: 0, courseCode: '079697-01', },
+	],
+	[ /* Tuesday */
+		{ start: 13, end: 16, type: 0, name: 4, instructor: 5, building: 604, room: 13, category: 1, courseCode: '88555-01', },
+		{ start: 16, end: 19, type: 0, name: 6, instructor: 8, building: 999, room: 999, category: 1, courseCode: '88537-01', },
+	],
+	[ /* Wednesday */
+		{ start: 13, end: 15, type: 0, name: 5, instructor: 6, building: 105, room: 1, category: 1, courseCode: '88376-01', },
+		{ start: 15, end: 17, type: 1, name: 5, instructor: 7, building: 105, room: 1, category: 1, courseCode: '88376-02', },
+	],
+	[ /* Thursday */
+		{ start: 9, end: 12, type: 0, name: 7, instructor: 9, building: 507, room: 4, category: 1, courseCode: '88240-01', },
+	],
+	[ /* Friday */
+	],
+];
+
+const uiElements = {
+	schedule: document.querySelector('#schedule'),
+	time: document.querySelector('#time'),
+	date: document.querySelector('#date'),
+	lessonNow: document.querySelector('#lesson-now'),
+	lessonNext: document.querySelector('#lesson-next'),
+};
+
+function hourToString(hour) {
+	const date = new Date();
+	date.setHours(hour);
+	date.setMinutes(hour % 1 * 60);
+
+	const hours = ('0' + date.getHours()).slice(-2);
+	const minutes = ('0' + date.getMinutes()).slice(-2);
+	return hours + ':' + minutes;
+};
+
+function buildLessonRow(lesson) {
+	const tr = document.createElement('tr');
+	const children = [
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+		document.createElement('td'),
+	];
+
+	children[0].textContent = hourToString(lesson.start) + '-' + hourToString(lesson.end);
+	children[1].textContent = LESSON_TYPE[lesson.type];
+	children[2].textContent = LESSON_NAME[lesson.name];
+	children[3].textContent = INSTRUCTORS[lesson.instructor];
+	const building = lesson.building >= 1000 ? lesson.building : ('00' + lesson.building).slice(-3);
+	children[4].textContent = `בנין ${building}, חדר ${('00' + lesson.room).slice(-3)}`;
+	children[5].textContent = lesson.courseCode;
+	tr.className = LESSON_CATEGORY[lesson.category];
+
+	tr.append(...children);
+	return tr;
+};
+
+function buildTable() {
+	for (let day = 0; day < LESSONS.length; day++) {
+		if (LESSONS[day].length === 0) continue;
+		const tbody = document.createElement('tbody');
+		const titleTr = document.createElement('tr');
+		const th = document.createElement('th');
+		th.textContent = 'יום ' + WEEK_DAYS[day];
+		th.colSpan = 6;
+		titleTr.className = 'day';
+		titleTr.append(th);
+		tbody.append(titleTr);
+
+		LESSONS[day].forEach(lesson => tbody.append(buildLessonRow(lesson)));
+
+		uiElements.schedule.append(tbody);
+	}
+};
+
+(function updateTime() {
+	uiElements.time.textContent =
+		new Date().toLocaleString('en-il').split(', ')[1];
+	setTimeout(updateTime, 400);
+})();
+
+(function updateDate() {
+	const dateObj = new Date();
+	const date = dateObj.toLocaleString('en-il').split(', ')[0];
+	const day = dateObj.getDay();
+
+	uiElements.date.textContent = `יום ${WEEK_DAYS[day]}, ${date}`;
+	setTimeout(updateDate, 600_000);
+})();
+
+function findNextLesson(day, hour) {
+	for (let nextDay = day; nextDay < LESSONS.length; nextDay++) {
+		const dayLessons = LESSONS[nextDay];
+		for (const lesson of dayLessons) {
+			if (lesson.start > hour) {
+				return lesson;
+			}
+		}
+
+		hour = 0; /* Start searching from the start of the next day */
+	}
+
+	return null;
+};
+
+const findCurrentLesson = (day, hour, minutes) => LESSONS
+	?.[day]
+	?.filter(lesson => {
+		const now = hour + minutes / 60;
+		return now >= lesson.start && now < lesson.end;
+	})
+	?.[0] ?? null;
+
+function updateLesson() {
+	const dateObj = new Date();
+	const day = dateObj.getDay();
+	const hour = dateObj.getHours();
+	const minutes = dateObj.getMinutes();
+	const currentLesson = findCurrentLesson(day, hour, minutes);
+	const nextLesson = findNextLesson(day, hour);
+
+	uiElements.lessonNow.textContent = currentLesson
+		? LESSON_NAME[currentLesson.name] +
+			', בבנין ' + currentLesson.building +
+			', חדר ' + currentLesson.room
+		: 'אין שום שיעור עכשיו';
+
+	uiElements.lessonNext.textContent = nextLesson
+		? LESSON_NAME[nextLesson.name] +
+			', בשעה ' + hourToString(nextLesson.start) +
+			', בבנין ' + nextLesson.building +
+			', חדר ' + nextLesson.room
+		: 'אין עוד שיעורים השבוע';
+
+	/* Update every minute */
+	setTimeout(updateLesson, 10_000);
+};
+
+buildTable();
+updateLesson();
+		</script>
+		
+		<img id="map" src="./BIU_map2021-min.jpg">
+	</body>
+</html>
